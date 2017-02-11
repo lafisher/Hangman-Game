@@ -1,6 +1,8 @@
 
 header {text-align: center;
-background-color: darkred;}
+background-color: darkred;
+font-family: fantasy;
+}
 h1 {color:black;
   background-color: darkred;
   font-size: 76px;
@@ -11,9 +13,11 @@ h1 {color:black;
   background-color: darkred;
 }
  .gallows {
-   color: white;
+   color: black;
    text-align: center;
    font-weight: bolder;
+   font-family: fantasy;
+   font-size: 40px;
    padding: 30px;
    margin: 0 0 40px 20px;
    width: 100%;
@@ -22,26 +26,47 @@ h1 {color:black;
    float: left;
    border: 1px solid #ddd;
    background-image:url("../images/iron-throne.jpg");
-   opacity: 0.5;
+   opacity: 0.8;
 }
 
 
-
-.game-play {
+.winter { color: black;
+   text-align: center;
+   font-weight: bolder;
+   font-family: fantasy;
    background-color: darkred;
    padding: 30px;
-   margin: 0 20px 40px 20px;
+   margin: 0 0 40px 20px;
    width: 100%;
    height: 200px;
-   max-width: 600px;
+   max-width: 500px;
+   float: right;
    border: 1px solid #ddd;
 
 }
 
+.lettersremaining { color: black;
+   text-align: center;
+   font-weight: bolder;
+   font-family: fantasy;
+   background-color: darkred;
+   padding: 30px;
+   margin: 0 0 40px 20px;
+   width: 100%;
+   height: 200px;
+   max-width: 500px;
+   float: right;
+   border: 1px solid #ddd;
 
+}
 
+.mystery { color: black;
+   text-align: center;
+   font-weight: bolder;
+   font-family: fantasy;
+  
 
-
+}
 
 
 
