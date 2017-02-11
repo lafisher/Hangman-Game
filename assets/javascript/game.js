@@ -4,7 +4,7 @@
  //choose rando words
   var words =[
   'wine','lanaster','poison','lion','direwolf','swords','crows','feast',
-  'blood', 'dragon','jamie','battle','death','wedding','Stark','heart tree',
+  'blood', 'dragon','jamie','battle','death','wedding','stark','heart tree',
   ];
 
  var word = words[Math.floor(Math.random() * words.length)];
@@ -46,5 +46,25 @@
 alert(mysteryWord.join(" "));
 
 alert ("you have honored your house, the answer is " + word + "." );
+
+// 1- create word array- done
+// 2- create letter array - done, not needed, removed
+// create random number generator to loop through words - done
+// create blanks in place of word - done
+// replace blanks with correct letter guesses - done
+// show guessed letters ??
+// show letters left unguessed ??
+// show "hangman" being built with wrong each wrong letter guess ??
+// create onkeyup event to start game with sound ??
+// create audio event for corect guesses/wrong guesses ??
+// create reset button ??
+// create end you won alert - done
+// create you lost alert (need to have limit to wrong guesses) ??
+
+
+
+
+
+
 
 
