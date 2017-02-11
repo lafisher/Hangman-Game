@@ -1,36 +1,50 @@
 //wowowowowowowowowowowow i have no idea what i'm doing. let's rock 
  
+ var readyPlayerOne = true;
+ //choose rando words
+  var words =[
+  'wine','lanaster','poison','lion','direwolf','swords','crows','feast',
+  'blood', 'dragon','jamie','battle','death','wedding','Stark','heart tree',
+  ];
 
-  var words =['wine','Lanaster','poison','lion','direwolf','swords','crows','feast',
-  'blood', 'dragon','Jamie','battle','death','wedding','Stark','heart tree',
-  ]
-  var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", 
-  "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "_"];
+ var word = words[Math.floor(Math.random() * words.length)];
 
-    $(document).ready(function() {
+ /*var el = document.getElementById("demo");
+ el.innerHTML = words*/
 
-  for (var i = 0; i < letters.length-1; i++) {
-     var guessBtn = $("<button>");
-       guessBtn.attr("class", "guess-button guess guess-button-color");
-       guessBtn.attr("data-letter", letters[i]);
-       guessBtn.html(letters[i]);
-          $(".game-play").append(guessBtn);
-      }
+ var mysteryWord = [];
 
-  $ (".guess-button").on("click", function() {
-        var letterGuess= $("<div>");
-       letterGuess.attr("class", "letter letterGuess-color");
-        letterGuess.text($(this).attr("data-letter"));
-        $(".dead").append(letterGuess);
-      });
+ for ( var i =0; i < word.length; i++){
+  mysteryWord[i] = "_";
+ }
 
- $ (".reset-button").on("click", function() {
-        var resetBtn= $("<button>");
-       resetBtn.attr("class", "reset resetBtn-color");
-        resetBtn.text($(this).attr("data-reset"));
-        $("#clean").append(resetBtn);
-      });
+ // create var to keep track of letters that remain to be guessed
+ var lettersRemaining = word.length;
+ // game loop yo
+
+ while (lettersRemaining > 0) {
+  //show progress
+  alert(mysteryWord.join(" "));
+ //guess
+ var guess = prompt("Guess a letter or click cancel because you're weak, your bloodline is weak and your children will perish");
+ if ( guess === null ){
+ // exit
+ break;
+} else { 
+  //update the game with guess
+  for (var j = 0; j < word.length; j++){
+    if(word[j] === guess){
+      mysteryWord[j] = guess;
+      lettersRemaining--;  
+    }
+  }
+}
+
+ }
+ // end of game loop yo
+
+alert(mysteryWord.join(" "));
+
+alert ("you have honored your house, the answer is " + word + "." );
 
 
-
-});
