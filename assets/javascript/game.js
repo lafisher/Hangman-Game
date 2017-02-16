@@ -1,4 +1,4 @@
-//wowowowowowowowowowowow i have no idea what i'm doing. let's rock 
+//let's rock 
  
 
 //let's set some variables! 
@@ -122,23 +122,6 @@ document.onkeyup = function(event) {
 } 
 
 
-
-
-        //--------------------------//
-      // pseudo code //
-// 1- create word array- done
-// 2- create letter array - done, not needed, removed
-// create random number generator to loop through words - done
-// create blanks in place of word - done
-// replace blanks with correct letter guesses - had it working currently broken 
-// show guessed letters - currently showing, but not being added to the word
-// show letters left unguessed ??
-// show "hangman" being built with wrong each wrong letter guess ??
-// link sound to the initialize onkey event ??
-// create audio event for corect guesses/wrong guesses ??
-// create reset button ??
-// create end you won alert - had one, i broke it. 
-// create you lost alert (need to have limit to wrong guesses) ??
 
 
 
