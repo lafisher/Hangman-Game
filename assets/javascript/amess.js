@@ -126,7 +126,7 @@ e.innerHTML = mysteryWord.join(" ");
 
 alert ("you have honored your house, the answer " + word + "." );
 
-//kjguhjhjhljhkjojpojp'ojpo'pokopk'opk[okpihiuugcu]
+//first stab at game so bad.  
 
 var readyPlayerOne = true;
  //choose rando words
@@ -176,7 +176,59 @@ e.innerHTML = mysteryWord.join(" ");
 
 alert ("you have honored your house, the answer " + word + "." );
 
+//end of first game code. 
 
+//half a game code from initial homework when it was turned in 
+
+  $( document ).ready(function() {
+      var setUpGame = function(){
+   } 
+     
+     setUpBlanks();
+});
+
+document.onkeyup = function(event) {
+  var pressedKey = event.key;
+  
+  
+  myGuesses.push(pressedKey);
+  $(".wrongletters").append(pressedKey);
+
+};
+  var setUpBlanks = function(){
+  for ( var i=0 ; i < mysteryWord.length; i++){
+  $(".gallows").append("_");
+  blanksWord.push("_");
+
+//attempt to make letters replace blanks, code not broken butdoes not work
+  if(word[i] === myGuesses[i]) {
+    $(".gallows").append(mysteryWord); };
+}
+};
+
+// my first stab at the game play, worked, was very clunky
+// while (lettersRemaining > 0) {
+// // var guess = prompt("Guess a letter or click cancel because you're weak, your bloodline is weak and your children will perish");
+// if ( guess === null ){
+//  // exit
+//   break;
+//  } else { 
+//  //update the game with guess
+//   for (var j = 0; j < word.length; j++){
+//     if(word[j] === guess){
+//        mysteryWord[j] = guess;
+//        lettersRemaining--;  
+//     }
+//    }
+//  }
+
+//   }
+
+// end of game loop yo
+
+// alert(mysteryWord.join(" "));
+
+// alert ("you have honored your house, the answer is " + word + "." );
 
 
 
